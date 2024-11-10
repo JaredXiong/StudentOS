@@ -38,6 +38,21 @@ static void Print(student* stu, int length) {
 	}
 	printf("---------------------------------------------------------------------------------\n");
 }
+//按学号进行二分查找
+static int binarySearch(student* stu, int left, int right, int x) {
+	int mid;
+	while (left <= right) {
+		mid = (left + right) / 2;
+		if (stu[mid].num == x) return mid;
+		else if (stu[mid].num > x) {
+			right = mid - 1;
+		}
+		else {
+			left = mid + 1;
+		}
+	}
+	return -1;
+}
 
 //录入信息
 int in(student* stu, int length) {
@@ -65,10 +80,9 @@ int in(student* stu, int length) {
 	system("cls");
 	return length;
 }
-
 //查找信息
 void search(student* stu, int length) {
-	int sear,no;
+	int sear, n, no;
 	char nam[15];
 	char tele[12];
 	printf("请输入查询方法编号：\n  1、按学号查询\n  2、按姓名查询\n  3、按手机号码查询\n  0、返回\n");
@@ -77,17 +91,13 @@ void search(student* stu, int length) {
 	case(1):
 		printf("请输入你要查询的学生学号：");
 		scanf("%d", &no);
-		for (int i = 0; i < length; i++) {
-			int m = 0;
-			if (no == stu[i].num) {
+		n = binarySearch(stu, 0, length - 1, no);
+		if (n == -1) {
+			printf("该学生不存在！");
+		}
+		else {
 				printf("学生学号：%d\t姓名：%s\t手机号码：%s\t平时成绩：%.2f\t期末成绩：%.2f\t总成绩：%.2f\n",
-					stu[i].num, stu[i].name, stu[i].telnum, stu[i].expe, stu[i].requ, stu[i].sum);
-				m = 1;
-			}
-			if (m)
-				break;
-			else if (i == length - 1)
-				printf("该学生不存在！");
+					stu[n].num, stu[n].name, stu[n].telnum, stu[n].expe, stu[n].requ, stu[n].sum);
 		}
 		break;
 	case(2):
@@ -143,21 +153,18 @@ int del(student* stu, int length) {
 	printf("|                            请输入你要删除的学生学号                           |\n");
 	Print(stu, length);
 	scanf("%d", &n);
-	for (int i = 0; i < length; i++) {
-		int m = 0;
-		if (n == stu[i].num) {
+	int i = binarySearch(stu, 0, length - 1, n);
+	if (i == -1) {
+		printf("该学生不存在！");
+	}
+	else {
 			for (int j = i; j < length; j++) {
 				stu[j] = stu[j + 1];
 			}
-			m = 1;
 			length--;
-		}
-		if (m)
-			break;
-		else if (i == length - 1)
-			printf("该学生不存在！");
+			printf("删除成功，");
 	}
-	printf("删除成功，按任意键继续！\n");
+	printf("按任意键继续！\n");
 	getch();
 	system("cls");
 	return length;
@@ -169,28 +176,25 @@ void modify(student* stu, int length) {
 	printf("|                            请输入你要修改的学生学号                           |\n");
 	Print(stu, length);
 	scanf("%d", &n);
-	for (int i = 0; i < length; i++) {
-		int m = 0;
-		if (n == stu[i].num) {			
-			char name[15], telnum[12];
-			double expe, requ, sum;
-			printf("请输入新的姓名、手机号码、平时成绩、期末成绩、总成绩,用空格分隔：\n");
-			scanf("%s %s %lf %lf %lf",name, telnum, &expe, &requ, &sum);
-			name[strlen(name)] = '\0';
-			telnum[strlen(telnum)] = '\0';
-			strcpy(stu[i].name, name);
-			strcpy(stu[i].telnum, telnum);
-			stu[i].expe = expe;
-			stu[i].requ = requ;
-			stu[i].sum = sum;
-			m = 1;
-		}
-		if (m)
-			break;
-		else if (i == length - 1)
-			printf("该学生不存在！");
+	int i = binarySearch(stu, 0, length - 1, n);
+	if (i == -1) {
+		printf("该学生不存在！");
 	}
-	printf("修改成功，按任意键继续！\n");
+	else {
+		char name[15], telnum[12];
+		double expe, requ, sum;
+		printf("请输入新的姓名、手机号码、平时成绩、期末成绩、总成绩,用空格分隔：\n");
+		scanf("%s %s %lf %lf %lf", name, telnum, &expe, &requ, &sum);
+		name[strlen(name)] = '\0';
+		telnum[strlen(telnum)] = '\0';
+		strcpy(stu[i].name, name);
+		strcpy(stu[i].telnum, telnum);
+		stu[i].expe = expe;
+		stu[i].requ = requ;
+		stu[i].sum = sum;
+		printf("修改成功，");
+	}
+	printf("按任意键继续！\n");
 	getch();
 	system("cls");
 	return;

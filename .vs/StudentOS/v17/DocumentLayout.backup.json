@@ -7,16 +7,16 @@
       "RelativeMoniker": "D:0:0:{BA4B75B9-8FF8-4DE5-8374-F15D8733FFC2}|StudentOS.vcxproj|solutionrelative:menu.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{BA4B75B9-8FF8-4DE5-8374-F15D8733FFC2}|StudentOS.vcxproj|D:\\develop\\VS2022Document\\StudentOS\\StudentStruct.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{BA4B75B9-8FF8-4DE5-8374-F15D8733FFC2}|StudentOS.vcxproj|solutionrelative:StudentStruct.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{BA4B75B9-8FF8-4DE5-8374-F15D8733FFC2}|StudentOS.vcxproj|D:\\develop\\VS2022Document\\StudentOS\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{BA4B75B9-8FF8-4DE5-8374-F15D8733FFC2}|StudentOS.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BA4B75B9-8FF8-4DE5-8374-F15D8733FFC2}|StudentOS.vcxproj|D:\\develop\\VS2022Document\\StudentOS\\menu.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{BA4B75B9-8FF8-4DE5-8374-F15D8733FFC2}|StudentOS.vcxproj|solutionrelative:menu.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BA4B75B9-8FF8-4DE5-8374-F15D8733FFC2}|StudentOS.vcxproj|D:\\develop\\VS2022Document\\StudentOS\\StudentStruct.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{BA4B75B9-8FF8-4DE5-8374-F15D8733FFC2}|StudentOS.vcxproj|solutionrelative:StudentStruct.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,50 +26,11 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "StudentStruct.h",
-              "DocumentMoniker": "D:\\develop\\VS2022Document\\StudentOS\\StudentStruct.h",
-              "RelativeDocumentMoniker": "StudentStruct.h",
-              "ToolTip": "D:\\develop\\VS2022Document\\StudentOS\\StudentStruct.h",
-              "RelativeToolTip": "StudentStruct.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-10-29T11:08:46.572Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "menu.h",
-              "DocumentMoniker": "D:\\develop\\VS2022Document\\StudentOS\\menu.h",
-              "RelativeDocumentMoniker": "menu.h",
-              "ToolTip": "D:\\develop\\VS2022Document\\StudentOS\\menu.h",
-              "RelativeToolTip": "menu.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-10-30T12:33:08.226Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "main.cpp",
-              "DocumentMoniker": "D:\\develop\\VS2022Document\\StudentOS\\main.cpp",
-              "RelativeDocumentMoniker": "main.cpp",
-              "ToolTip": "D:\\develop\\VS2022Document\\StudentOS\\main.cpp",
-              "RelativeToolTip": "main.cpp",
-              "ViewState": "AgIAADgAAAAAAAAAAAAmwE8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-10-29T11:16:55.942Z",
-              "EditorCaption": ""
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Document",
@@ -77,12 +38,49 @@
               "Title": "menu.cpp",
               "DocumentMoniker": "D:\\develop\\VS2022Document\\StudentOS\\menu.cpp",
               "RelativeDocumentMoniker": "menu.cpp",
-              "ToolTip": "D:\\develop\\VS2022Document\\StudentOS\\menu.cpp*",
-              "RelativeToolTip": "menu.cpp*",
-              "ViewState": "AgIAAHoAAAAAAAAAAAAowI4AAAAVAAAAAAAAAA==",
+              "ToolTip": "D:\\develop\\VS2022Document\\StudentOS\\menu.cpp",
+              "RelativeToolTip": "menu.cpp",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAADcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-10-30T12:11:46.211Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "StudentStruct.h",
+              "DocumentMoniker": "D:\\develop\\VS2022Document\\StudentOS\\StudentStruct.h",
+              "RelativeDocumentMoniker": "StudentStruct.h",
+              "ToolTip": "D:\\develop\\VS2022Document\\StudentOS\\StudentStruct.h",
+              "RelativeToolTip": "StudentStruct.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvw0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-10-29T11:08:46.572Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "menu.h",
+              "DocumentMoniker": "D:\\develop\\VS2022Document\\StudentOS\\menu.h",
+              "RelativeDocumentMoniker": "menu.h",
+              "ToolTip": "D:\\develop\\VS2022Document\\StudentOS\\menu.h",
+              "RelativeToolTip": "menu.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-10-30T12:33:08.226Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "main.cpp",
+              "DocumentMoniker": "D:\\develop\\VS2022Document\\StudentOS\\main.cpp",
+              "RelativeDocumentMoniker": "main.cpp",
+              "ToolTip": "D:\\develop\\VS2022Document\\StudentOS\\main.cpp",
+              "RelativeToolTip": "main.cpp",
+              "ViewState": "AgIAADgAAAAAAAAAAAAmwE8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-10-29T11:16:55.942Z"
             }
           ]
         }
